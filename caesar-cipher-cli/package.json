@@ -1,0 +1,25 @@
+{
+  "name": "caesar-cipher-cli",
+  "version": "1.0.0",
+  "description": "https://github.com/rolling-scopes-school/nodejs-course-template/blob/master/TASKS.md",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IrochkaZ/caesar-cipher-cli.git"
+  },
+  "author": "Iryna Zaletko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IrochkaZ/caesar-cipher-cli/issues"
+  },
+  "homepage": "https://github.com/IrochkaZ/caesar-cipher-cli#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
+}
