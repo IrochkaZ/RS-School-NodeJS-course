@@ -8,18 +8,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IrochkaZ/caesar-cipher-cli.git"
+    "url": "git+https://github.com/IrochkaZ/RS-School-NodeJS-course"
   },
   "author": "Iryna Zaletko",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/IrochkaZ/caesar-cipher-cli/issues"
+    "url": "https://github.com/IrochkaZ/RS-School-NodeJS-course/issues"
   },
-  "homepage": "https://github.com/IrochkaZ/caesar-cipher-cli#readme",
+  "homepage": "https://github.com/IrochkaZ/RS-School-NodeJS-course#readme",
   "devDependencies": {
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
     "nodemon": "^2.0.2"
   },
   "dependencies": {
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.5",
+    "stream": "0.0.2"
   }
 }
