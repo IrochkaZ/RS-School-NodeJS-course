@@ -1,4 +1,3 @@
-
 const alphabetLowCase = 'abcdefghijklmnopqrstuvwxyz';
 const alphabetUpperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
