@@ -42,7 +42,7 @@ const checkParams = (state) => {
       checkData['input'] = false;
       console.log(`Attention: The input file was not defined${(cfg['input']) ? ` (${cfg['input']})` : ``}, so input thread will be switched to console input!!!`);
     } else if(!fs.existsSync(`${cfg['input']}`)) {
-      console.error('Error: The input file is not exists');
+        process.stderr.write('Error: The input file is not exists', () => process.exit(1))
     } else {
       checkData['input'] = true;
     }
@@ -57,7 +57,7 @@ const checkParams = (state) => {
     result =  defineCase(checkData);
 
   } else {
-    console.error('Error: The Action and Shift values are required!');
+    process.stderr.write('Error: The Action and Shift values are required!');
     console.log('Action: encode/decode values only');
     console.log('Shift: Integer value between 0 and 25');
     result = false;
