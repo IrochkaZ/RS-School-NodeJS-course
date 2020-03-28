@@ -19,11 +19,11 @@ const consoleToFile = (obj) => {
 
 rl.on('line', (line) => {
   if (fs.existsSync(obj['output'])) {
-     fs.appendFile(obj['output'],' ' + cipherProcess(line.toString(), obj['action'], obj['shift']),'utf8',
-     function(err) {
-       if (err) throw err;
-       console.log(`Data is appended from console to file ${obj['output']} successfully.`)
-     });
+      fs.appendFile(obj['output'],' ' + cipherProcess(line.toString(), obj['action'], obj['shift']),'utf8',
+      function(err) {
+        if (err) throw err;
+        console.log(`Data is appended from console to file ${obj['output']} successfully.`)
+      });
  } else {
    pipe(strTransformation)
    .pipe(fs.createWriteStream(obj['output']));
